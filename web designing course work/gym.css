@@ -1,0 +1,195 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General styles */
+  body {
+    font-family: Garamond;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    background-color:rgb(187, 186, 186);
+    color: #10141a;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+   
+  }
+  h2,h3,h4,h5,h6 {
+    color: #1b4242;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 2rem;
+    font-family: Garamond;
+  }
+  a {
+    color: #4CAF50;
+  }
+  
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  
+  /* Header styles */
+  #gym-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  #gym-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Intro styles */
+  #gym-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  #gym-intro-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #gym-intro-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #gym-intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Features styles */
+  #gym-features {
+    padding: 20px;
+  }
+  
+  .gym-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .gym-feature img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+  #gym-gallery {
+    padding: 50px 0;
+  }
+  
+  .gym-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .gym-gallery-item {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .gym-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+  }
+  
+  .gym-gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  #gym-instructors {
+    padding: 50px 0;
+  }
+  
+  .gym-instructor-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .gym-instructor-item {
+    text-align: center;
+  }
+  
+  .gym-instructor-item img {
+    width: 25vw;
+    margin-bottom: 10px;
+  }
+  
+  .gym-instructor-item h3 {
+    margin-bottom: 10px;
+  }
+
+  /* Testimonials styles */
+  #gym-testimonials {
+    padding: 20px ;
+    background-color: #bab5a9;
+  }
+  
+  .gym-testimonial {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #31363f;
+    border: 1px solid red;
+    color: aliceblue;
+  }
+  
+  .gym-testimonial cite {
+    font-style: normal;
+    color: #f7f3f3;
+    margin-top: 1rem;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    #gym-intro {
+      grid-template-columns: 1fr;
+    }
+  
+    #gym-intro-image-container {
+      grid-column: 1 / -1;
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  
+  section {
+    transition: background-color 0.5s ease;
+  }
+  
+  section.active {
+    background-color: #f2f2f2;
+  }
+  
